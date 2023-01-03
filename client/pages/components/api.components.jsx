@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Api() {
     const [data, setData] = React.useState([])
-    axios.get('http://localhost:3001/users').then(res => setData(res.data))
+    axios.get('https://localhost:3001/users').then(res => setData(res.data))
     
     const posthandleSubmit = async event => {
         event.preventDefault();
@@ -11,7 +11,7 @@ export default function Api() {
         const data = Object.fromEntries(formData);
     
         try {
-          const res = await axios.post('http://localhost:3001/users/new', data);
+          const res = await axios.post('https://localhost:3001/users/new', data);
           console.log(res.data);
         } catch (err) {
           console.error(err);
@@ -23,7 +23,7 @@ export default function Api() {
         const data = Object.fromEntries(formData);
     
         try {
-          const res = await axios.delete(`http://localhost:3001/users/delete/` + data.username, data);
+          const res = await axios.delete(`https://localhost:3001/users/delete/` + data.username, data);
           console.log(res.data);
         } catch (err) {
           console.error(err);
