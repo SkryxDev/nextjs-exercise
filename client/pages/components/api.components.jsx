@@ -1,9 +1,9 @@
 import axios from 'axios'
 import React from 'react'
 
-export default function Api() {
+export default async function Api() {
     const [data, setData] = React.useState([])
-    axios.get('https://localhost:3001/users').then(res => setData(res.data))
+    await axios.get('https://localhost:3001/users').then(res => setData(res.data))
     
     const posthandleSubmit = async event => {
         event.preventDefault();
