@@ -7,7 +7,7 @@ export default function Navbar() {
                     ".whitetext{color:white;}"
                 }
                 </style>
-                <a className="navbar-brand whitetext" href="#">NextJS e Express esercise</a>
+                <a className="navbar-brand whitetext" href="#">NextJS e Express exercise</a>
             </div>
             </nav>
         </div>
