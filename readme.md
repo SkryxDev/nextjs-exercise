@@ -16,7 +16,7 @@ Semplicemente crea una `comunicazione`. In questo caso "comunica" i dati di un d
 ## Front-end
     Il front-end è la parte **visibile** di un full-stack web, presente in ogni sito web, anche in HTML vanilla.
 
-Questa parte di web è fatta in file chiamati `JSX`, file che **non** verranno mai "comunicati" usando ispezione, in poche parole dati privati, che poi vengono trasformati in HTML/CSS/JS per essere compatibili con ogni browser, in questo caso io non ho utilizzato CSS essendo solo un esercizio per me.
+Questa parte di web è fatta in file chiamati `JSX`, file che **non** verranno mai "comunicati" usando ispezione, in poche parole dati privati, che poi vengono trasformati in HTML/CSS/JS per essere compatibili con ogni browser, in questo caso io ho utilizzato Bootstrap come CSS.
 
 Questa parte (in questo caso, si potrebbero fare molte altre request) può inviare (`POST` request), ricevere (`GET` request) o eliminare (`DELETE` request) dati dall'API.
 
